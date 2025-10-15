@@ -1,0 +1,48 @@
+﻿@"
+# Environment variables - NEVER COMMIT!
+.env
+backend/.env
+frontend/.env
+.env.local
+.env.development
+.env.production
+
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+*/node_modules/
+
+# Uploads
+backend/uploads/
+uploads/
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.webm
+
+# Build files
+frontend/dist/
+frontend/build/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+"@ | Out-File -FilePath .gitignore -Encoding utf8 -Force
